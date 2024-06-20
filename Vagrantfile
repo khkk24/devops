@@ -8,6 +8,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "public_network", ip: "192.168.0.99"
 #  config.vm.network "public_network"
   config.vm.provision "shell", inline: <<-SHELL
+#  config.vm.provision "shell", path: "script.sh"
 #  config.vm.provider "virtualbox" do |vb|
     vb.nome = "node1"
     sudo apt-get update
